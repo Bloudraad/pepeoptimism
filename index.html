@@ -6,27 +6,23 @@
   <title>PEPE Optimism (PEPE) — OP Chain Meme Utility</title>
   <meta name="description" content="PEPE Optimism (PEPE) is a community-driven ERC-20 token on Optimism with Velodrome DeFi utility. LP burned, ownership renounced. Not affiliated with Matt Furie." />
 
-  <link rel="icon" href="/favicon.png" type="image/png" />
-  <link rel="canonical" href="https://pepeoptimism.com/" />
-  <meta property="og:title" content="PEPE Optimism (PEPE) — OP Chain Meme Utility" />
-  <meta property="og:description" content="Community-driven ERC-20 on Optimism with Velodrome DeFi utility. LP burned, ownership renounced. Not affiliated with Matt Furie." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/banner.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="PEPE Optimism (PEPE) — OP Chain Meme Utility" />
-  <meta name="twitter:description" content="Community-driven ERC-20 on Optimism with Velodrome DeFi utility. LP burned, ownership renounced." />
-  <meta name="twitter:image" content="/assets/banner.jpg" />
+  <!-- ✅ PATCH: FAVICON -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="shortcut icon" href="/assets/favicon.png">
 
-  <!-- Analytics (optional): replace G-XXXXXXX with your GA4 Measurement ID -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
-  -->
+  <!-- ✅ PATCH: OPEN GRAPH (Discord/WhatsApp/Telegram previews) -->
+  <meta property="og:title" content="PEPE Optimism (PEPE) — OP Chain Meme Utility">
+  <meta property="og:description" content="Community-driven ERC-20 on Optimism with Velodrome DeFi utility. LP burned, ownership renounced.">
+  <meta property="og:url" content="https://www.pepeoptimism.com">
+  <meta property="og:type" content="website">
+  <!-- Using your GIF for now. If you later add /assets/og-image.png (1200x630), swap this URL. -->
+  <meta property="og:image" content="https://www.pepeoptimism.com/assets/op.gif">
+
+  <!-- ✅ PATCH: TWITTER CARD (works even if you don't manage Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PEPE Optimism (PEPE) — OP Chain Meme Utility">
+  <meta name="twitter:description" content="Community-driven ERC-20 on Optimism with Velodrome DeFi utility.">
+  <meta name="twitter:image" content="https://www.pepeoptimism.com/assets/op.gif">
 
   <style>
     :root{
@@ -199,22 +195,6 @@
       text-decoration:none;font-weight:800;font-size:13px;
     }
     .note{
-
-    .embed{
-      position:relative;
-      width:100%;
-      padding-top:56.25%;
-      border-radius:16px;
-      overflow:hidden;
-      border:1px solid var(--border);
-      background:rgba(0,0,0,.25);
-    }
-    .embed iframe{
-      position:absolute; inset:0;
-      width:100%; height:100%;
-      border:0;
-    }
-    .note{
       margin-top:10px;
       border-left:4px solid rgba(255,61,127,.55);
       padding:10px 12px;
@@ -257,17 +237,22 @@
 
           <div class="ctaRow">
             <a class="btn primary" target="_blank"
-               href="https://velodrome.finance/swap?from=0x4200000000000000000000000000000000000042&to=0x12ff4a259e14d4dcd239c447d23c9b00f7781d8f" rel="noopener">
+               href="https://velodrome.finance/swap?from=0x4200000000000000000000000000000000000042&to=0x12ff4a259e14d4dcd239c447d23c9b00f7781d8f">
               🚴 Trade on Velodrome
             </a>
 
             <a class="btn danger" target="_blank"
-               href="https://optimistic.etherscan.io/token/0x12ff4a259e14D4DCd239C447D23C9b00F7781d8F" rel="noopener">
+               href="https://optimistic.etherscan.io/token/0x12ff4a259e14D4DCd239C447D23C9b00F7781d8F">
               🧾 View on Optimistic Etherscan
             </a>
 
-            <a class="btn" target="_blank" href="https://velodrome.finance/docs" rel="noopener">
+            <a class="btn" target="_blank" href="https://velodrome.finance/docs">
               📚 Velodrome Docs
+            </a>
+
+            <!-- ✅ PATCH: DISCORD BUTTON -->
+            <a class="btn" target="_blank" href="https://discord.gg/mudNGa5tNv">
+              💬 Join Discord
             </a>
           </div>
         </div>
@@ -309,33 +294,6 @@
 
     <div class="grid">
 
-<div class="grid">
-
-
-      <div class="card full">
-        <h2>Live Chart</h2>
-        <p class="small" style="margin:0 0 12px">
-          Live price action + volume for the <b>PEPE</b> pool on GeckoTerminal.
-          If the embed ever refuses to load (browser blocks iframes), use the button below to open it directly.
-        </p>
-        <div class="embed">
-          <iframe
-            src="https://www.geckoterminal.com/optimism/pools/0xc08a890aaecd8f99ae9f09cd34fdb995d5efb08a?utm_campaign=livechart&utm_medium=embed&utm_source=pepeoptimism.com"
-            title="PEPE Optimism Pool Chart (GeckoTerminal)"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="links" style="margin-top:12px">
-          <a class="chip" target="_blank" rel="noopener"
-             href="https://www.geckoterminal.com/optimism/pools/0xc08a890aaecd8f99ae9f09cd34fdb995d5efb08a" rel="noopener">
-            📈 Open on GeckoTerminal
-          </a>
-        </div>
-        <p class="small" style="margin-top:10px;opacity:.9">Powered by GeckoTerminal.</p>
-      </div>
-
       <div class="card">
         <h2>What is PEPE Optimism?</h2>
         <p class="small">
@@ -345,7 +303,7 @@
         <p class="small">
           It is <b>not</b> officially associated with Matt Furie or Pepe the Frog.
           Learn about Pepe’s origins:
-          <a target="_blank" href="https://en.wikipedia.org/wiki/Pepe_the_Frog" rel="noopener">Wikipedia</a>.
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Pepe_the_Frog">Wikipedia</a>.
         </p>
       </div>
 
@@ -358,7 +316,7 @@
           <li>🗳️ Bribe + vote layers (Velodrome ve(3,3) model)</li>
         </ul>
         <p class="small" style="margin-top:10px">
-          Optimism info: <a target="_blank" href="https://www.optimism.io/" rel="noopener">optimism.io</a>
+          Optimism info: <a target="_blank" href="https://www.optimism.io/">optimism.io</a>
         </p>
       </div>
 
@@ -371,11 +329,9 @@
         </p>
         <div class="links">
           <a class="chip" target="_blank"
-             href="https://velodrome.finance/swap?from=0x4200000000000000000000000000000000000042&to=0x12ff4a259e14d4dcd239c447d23c9b00f7781d8f" rel="noopener">🚴 Velodrome Swap</a>
-          <a class="chip" target="_blank" href="https://velodrome.finance/docs" rel="noopener">📚 Velodrome Docs</a>
-          <a class="chip" target="_blank" href="https://optimistic.etherscan.io/token/0x12ff4a259e14D4DCd239C447D23C9b00F7781d8F" rel="noopener">🧾 Etherscan</a>
-        
-          <a class="chip" target="_blank" rel="noopener" href="https://discord.gg/mudNGa5tNv" rel="noopener">💬 Discord</a>
+             href="https://velodrome.finance/swap?from=0x4200000000000000000000000000000000000042&to=0x12ff4a259e14d4dcd239c447d23c9b00f7781d8f">🚴 Velodrome Swap</a>
+          <a class="chip" target="_blank" href="https://velodrome.finance/docs">📚 Velodrome Docs</a>
+          <a class="chip" target="_blank" href="https://optimistic.etherscan.io/token/0x12ff4a259e14D4DCd239C447D23C9b00F7781d8F">🧾 Etherscan</a>
         </div>
       </div>
 
@@ -411,7 +367,7 @@
         </p>
         <p class="small">
           Before using Velodrome layers, review their docs and disclaimers:
-          <a target="_blank" href="https://velodrome.finance/docs" rel="noopener">velodrome.finance/docs</a>
+          <a target="_blank" href="https://velodrome.finance/docs">velodrome.finance/docs</a>
         </p>
       </div>
 
@@ -431,4 +387,3 @@
   </script>
 </body>
 </html>
-
